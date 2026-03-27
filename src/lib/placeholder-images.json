@@ -1,0 +1,40 @@
+{
+  "placeholderImages": [
+    {
+      "id": "album-1",
+      "description": "Cyberpunk neon city lights",
+      "imageUrl": "https://picsum.photos/seed/cyber/600/600",
+      "imageHint": "neon synthwave"
+    },
+    {
+      "id": "album-2",
+      "description": "Retro vinyl record aesthetic",
+      "imageUrl": "https://picsum.photos/seed/vinyl/600/600",
+      "imageHint": "vinyl aesthetic"
+    },
+    {
+      "id": "album-3",
+      "description": "Deep blue concert lighting",
+      "imageUrl": "https://picsum.photos/seed/concert/600/600",
+      "imageHint": "concert lights"
+    },
+    {
+      "id": "album-4",
+      "description": "Minimalist geometric shapes",
+      "imageUrl": "https://picsum.photos/seed/minimal/600/600",
+      "imageHint": "minimalist art"
+    },
+    {
+      "id": "album-5",
+      "description": "Lofi hip hop girl aesthetic",
+      "imageUrl": "https://picsum.photos/seed/lofi/600/600",
+      "imageHint": "lofi chill"
+    },
+    {
+      "id": "hero-studio",
+      "description": "High-end recording studio console",
+      "imageUrl": "https://picsum.photos/seed/prostudio/1200/400",
+      "imageHint": "music studio"
+    }
+  ]
+}

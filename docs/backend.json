@@ -1,0 +1,37 @@
+
+{
+  "entities": {
+    "Room": {
+      "title": "Room",
+      "description": "Represents a class room with a specific room code.",
+      "type": "object",
+      "properties": {
+        "code": { "type": "string" }
+      }
+    },
+    "RequestItem": {
+      "title": "RequestItem",
+      "description": "A single song request in a room's queue or history.",
+      "type": "object",
+      "properties": {
+        "song": { "type": "object" },
+        "requesterName": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "status": { "type": "string", "enum": ["pending", "playing", "completed"] }
+      }
+    }
+  },
+  "auth": {
+    "providers": ["anonymous"]
+  },
+  "firestore": {
+    "/rooms/{roomCode}/queue/{requestId}": {
+      "schema": "RequestItem",
+      "description": "The real-time song queue for a specific room."
+    },
+    "/rooms/{roomCode}/history/{historyId}": {
+      "schema": "RequestItem",
+      "description": "The history of played songs for a specific room."
+    }
+  }
+}
